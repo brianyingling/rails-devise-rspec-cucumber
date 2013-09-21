@@ -43,6 +43,7 @@ end
 gem 'protected_attributes'
 
 group :development, :test do
+  gem 'pry'
   gem 'annotate'
   gem 'rspec-rails'
   gem 'database_cleaner'

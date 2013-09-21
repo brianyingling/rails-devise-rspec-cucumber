@@ -9,7 +9,10 @@
   <%= csrf_meta_tags %>
   <%= yield(:head) %>
 </head>
+
 <body class="<%= controller_name %> <%= action_name %>">
+  <p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
   <div id="container" class="container">
   <header>
     <%= render 'layouts/navigation' %>

@@ -1,5 +1,9 @@
 RailsDeviseRspecCucumber::Application.routes.draw do
+  get "users/index"
+  get "users/show"
   # get "home/index"
+
+  # resources :users
 
   # authenticated users -- those logged in and
   # have an account -- will see the home page
@@ -13,6 +17,7 @@ RailsDeviseRspecCucumber::Application.routes.draw do
   # NOTE: As of Rails 4, you can't have two routes routing
   # to the same controller#method.
   root :to => 'home#index'
+
   devise_for :users
 
 end
